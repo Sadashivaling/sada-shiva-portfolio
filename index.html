@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Sadashivaling Kumaraling Pattanashetti">
   <title>Sadashivaling Kumaraling Pattanashetti | Portfolio</title>
-
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+  <!-- NAVIGATION -->
   <header class="navbar">
-    <div class="container nav-content">
+    <div class="nav-container">
       <a href="#home" class="logo">SKP</a>
 
       <nav>
+        <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
@@ -25,286 +25,224 @@
     </div>
   </header>
 
-  <main>
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-content">
 
-    <!-- HERO -->
-    <section id="home" class="hero">
-      <div class="container hero-content">
+      <p class="small-title">COMPUTER SCIENCE & ENGINEERING</p>
 
-        <p class="eyebrow">COMPUTER SCIENCE & ENGINEERING</p>
+      <h1>
+        Hi, I'm <span>Sadashivaling</span>
+      </h1>
 
-        <h1>
-          Sadashivaling<br>
-          <span>Kumaraling Pattanashetti</span>
-        </h1>
+      <h2>Computer Science Student</h2>
 
-        <p class="hero-text">
-          Computer Science student interested in Python,
-          Machine Learning and Deep Learning, with hands-on
-          experience through academic and personal projects.
+      <p class="hero-text">
+        I'm a CSE student interested in Python, Machine Learning and
+        Deep Learning. I enjoy learning through practical projects
+        and building useful solutions.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="#contact" class="btn secondary">Contact Me</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <p class="section-number">01 — ABOUT ME</p>
+    <h2>Who I Am</h2>
+
+    <div class="about-card">
+      <p>
+        I am <strong>Sadashivaling Kumaraling Pattanashetti</strong>,
+        a Computer Science and Engineering student at
+        <strong>Don Bosco Institute of Technology</strong>.
+      </p>
+
+      <p>
+        I am currently in my 4th year with a CGPA of
+        <strong>8.38</strong>. My current areas of interest include
+        Python, Machine Learning and Deep Learning.
+      </p>
+
+      <p>
+        I am focused on improving my technical skills through
+        hands-on learning and practical projects.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section dark-section">
+    <p class="section-number">02 — SKILLS</p>
+    <h2>What I Work With</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-icon">01</div>
+        <h3>Python</h3>
+        <p>
+          Programming and problem solving using Python.
         </p>
-
-        <div class="hero-buttons">
-          <a href="#projects" class="btn primary">View Projects</a>
-          <a href="#contact" class="btn secondary">Contact Me</a>
-        </div>
-
       </div>
-    </section>
 
-
-    <!-- ABOUT -->
-    <section id="about" class="section">
-      <div class="container">
-
-        <div class="section-title">
-          <span>01</span>
-          <h2>About Me</h2>
-        </div>
-
-        <div class="about-grid">
-
-          <div>
-            <p>
-              I am a 4th-year Computer Science and Engineering
-              student at Don Bosco Institute of Technology with
-              a CGPA of 8.38.
-            </p>
-
-            <p>
-              I am interested in Python, Machine Learning and
-              Deep Learning. I enjoy working with practical
-              problems and building projects that help me
-              strengthen my technical skills.
-            </p>
-          </div>
-
-          <div class="info-card">
-            <div>
-              <span>Degree</span>
-              <strong>B.E. Computer Science & Engineering</strong>
-            </div>
-
-            <div>
-              <span>Institute</span>
-              <strong>Don Bosco Institute of Technology</strong>
-            </div>
-
-            <div>
-              <span>CGPA</span>
-              <strong>8.38</strong>
-            </div>
-
-            <div>
-              <span>Year</span>
-              <strong>4th Year</strong>
-            </div>
-          </div>
-
-        </div>
+      <div class="card">
+        <div class="card-icon">02</div>
+        <h3>Machine Learning</h3>
+        <p>
+          Learning and working with machine learning concepts
+          and practical applications.
+        </p>
       </div>
-    </section>
 
-
-    <!-- SKILLS -->
-    <section id="skills" class="section section-dark">
-      <div class="container">
-
-        <div class="section-title">
-          <span>02</span>
-          <h2>Skills</h2>
-        </div>
-
-        <div class="skills-grid">
-
-          <div class="skill-card">
-            <h3>Programming</h3>
-            <p>Python</p>
-          </div>
-
-          <div class="skill-card">
-            <h3>AI / ML</h3>
-            <p>Machine Learning</p>
-            <p>Deep Learning</p>
-          </div>
-
-          <div class="skill-card">
-            <h3>Tools</h3>
-            <p>Google Colab</p>
-            <p>Jupyter Notebook</p>
-          </div>
-
-        </div>
+      <div class="card">
+        <div class="card-icon">03</div>
+        <h3>Deep Learning</h3>
+        <p>
+          Exploring deep learning approaches through
+          practical experimentation.
+        </p>
       </div>
-    </section>
 
+    </div>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <div class="container">
+    <div class="tools">
+      <span>Google Colab</span>
+      <span>Jupyter Notebook</span>
+    </div>
+  </section>
 
-        <div class="section-title">
-          <span>03</span>
-          <h2>Projects</h2>
-        </div>
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <p class="section-number">03 — PROJECTS</p>
+    <h2>Selected Work</h2>
 
-        <div class="projects-grid">
+    <div class="projects">
 
-          <article class="project-card featured">
-            <span class="project-number">01</span>
+      <div class="project-card">
+        <div class="project-number">01</div>
 
-            <h3>Vehicle Number Plate Detection</h3>
-
-            <p>
-              A computer vision based project focused on
-              detecting vehicle number plates from images.
-            </p>
-
-            <div class="tags">
-              <span>Python</span>
-              <span>Machine Learning</span>
-              <span>Deep Learning</span>
-            </div>
-          </article>
-
-
-          <article class="project-card">
-            <span class="project-number">02</span>
-
-            <h3>Machine Learning Project</h3>
-
-            <p>
-              Academic project demonstrating the application
-              of machine learning techniques to a practical
-              problem.
-            </p>
-
-            <div class="tags">
-              <span>Python</span>
-              <span>ML</span>
-            </div>
-          </article>
-
-
-          <article class="project-card">
-            <span class="project-number">03</span>
-
-            <h3>Deep Learning Project</h3>
-
-            <p>
-              Project work focused on applying deep learning
-              concepts and experimentation using notebook-based
-              development.
-            </p>
-
-            <div class="tags">
-              <span>Python</span>
-              <span>Deep Learning</span>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-
-    <!-- EDUCATION -->
-    <section id="education" class="section section-dark">
-      <div class="container">
-
-        <div class="section-title">
-          <span>04</span>
-          <h2>Education</h2>
-        </div>
-
-        <div class="education-card">
-
-          <div>
-            <span class="education-year">CURRENT</span>
-            <h3>Bachelor of Engineering</h3>
-            <p>Computer Science & Engineering</p>
-          </div>
-
-          <div>
-            <h3>Don Bosco Institute of Technology</h3>
-            <p>4th Year</p>
-            <strong>CGPA: 8.38</strong>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-
-    <!-- LANGUAGES -->
-    <section class="section">
-      <div class="container">
-
-        <div class="section-title">
-          <span>05</span>
-          <h2>Languages</h2>
-        </div>
-
-        <div class="language-list">
-          <div>Kannada</div>
-          <div>Hindi</div>
-          <div>English</div>
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- CONTACT -->
-    <section id="contact" class="contact-section">
-      <div class="container contact-content">
-
-        <p class="eyebrow">06 — CONTACT</p>
-
-        <h2>Let's Connect.</h2>
+        <h3>Vehicle Number Plate Detection</h3>
 
         <p>
-          I am interested in learning, contributing and
-          starting my career in software development and
-          related technical roles.
+          A computer vision project focused on detecting vehicle
+          number plates from images using machine learning /
+          deep learning techniques.
         </p>
 
-        <div class="contact-buttons">
-
-          <a
-            href="https://github.com/Sadashivaling"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn primary"
-          >
-            GitHub
-          </a>
-
-          <a
-            href="https://www.linkedin.com/in/sada-shiva-559bb7360"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn secondary"
-          >
-            LinkedIn
-          </a>
-
+        <div class="project-tags">
+          <span>Python</span>
+          <span>Machine Learning</span>
+          <span>Computer Vision</span>
         </div>
-
       </div>
-    </section>
 
-  </main>
+      <div class="project-card">
+        <div class="project-number">02</div>
 
+        <h3>Personal Portfolio Website</h3>
 
-  <footer>
-    <div class="container">
-      <p>
-        © 2026 Sadashivaling Kumaraling Pattanashetti
-      </p>
-      <p>Built for opportunities.</p>
+        <p>
+          A responsive personal portfolio website created to
+          showcase my education, technical skills, projects
+          and professional profiles.
+        </p>
+
+        <div class="project-tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+      </div>
+
     </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section dark-section">
+    <p class="section-number">04 — EDUCATION</p>
+    <h2>Education</h2>
+
+    <div class="education-card">
+
+      <div>
+        <span class="education-year">CURRENT</span>
+        <h3>Computer Science & Engineering</h3>
+        <p>Don Bosco Institute of Technology</p>
+      </div>
+
+      <div class="cgpa">
+        <small>CGPA</small>
+        <strong>8.38</strong>
+      </div>
+
+    </div>
+
+    <div class="education-status">
+      <span>4th Year</span>
+      <span>Computer Science & Engineering</span>
+    </div>
+  </section>
+
+  <!-- LANGUAGES -->
+  <section class="section">
+    <p class="section-number">05 — LANGUAGES</p>
+    <h2>Languages</h2>
+
+    <div class="language-list">
+      <span>Kannada</span>
+      <span>Hindi</span>
+      <span>English</span>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section">
+
+    <p class="section-number">06 — CONTACT</p>
+
+    <h2>Let's Connect</h2>
+
+    <p>
+      I'm open to learning opportunities, collaborations
+      and connecting with other developers and technology
+      enthusiasts.
+    </p>
+
+    <div class="contact-buttons">
+
+      <a
+        href="https://github.com/Sadashivaling"
+        target="_blank"
+        class="btn primary">
+        GitHub
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/sada-shiva-559bb7360"
+        target="_blank"
+        class="btn secondary">
+        LinkedIn
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      © <span id="year"></span> Sadashivaling Kumaraling Pattanashetti
+    </p>
+    <p>Built with HTML, CSS & JavaScript</p>
   </footer>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
