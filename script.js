@@ -1,124 +1,46 @@
 // Current year
-document.getElementById("year").textContent =
-  new Date().getFullYear();
+document.getElementById("year").textContent = new Date().getFullYear();
 
 
-// Smooth navigation
-document.querySelectorAll('a[href^="#"]').forEach(link => {
+// Mobile navigation
+const menuButton = document.getElementById("menuButton");
+const navbar = document.querySelector(".navbar");
 
-  link.addEventListener("click", function (event) {
-
-    const targetId = this.getAttribute("href");
-
-    if (targetId === "#") return;
-
-    const target = document.querySelector(targetId);
-
-    if (target) {
-
-      event.preventDefault();
-
-      target.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      });
-
-    }
-
-  });
-
+menuButton.addEventListener("click", () => {
+  navbar.classList.toggle("mobile-open");
 });
 
 
-// Active navigation
+// Close mobile menu after clicking a link
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    navbar.classList.remove("mobile-open");
+  });
+});
+
+
+// Active navigation link while scrolling
 const sections = document.querySelectorAll("section[id]");
-const navLinks = document.querySelectorAll(".nav-link");
-
-function updateActiveNav() {
-
-  let current = "";
-
-  sections.forEach(section => {
-
-    const sectionTop = section.offsetTop - 180;
-
-    if (window.scrollY >= sectionTop) {
-      current = section.getAttribute("id");
-    }
-
-  });
-
-  navLinks.forEach(link => {
-
-    link.classList.remove("active");
-
-    if (link.getAttribute("href") === "#" + current) {
-      link.classList.add("active");
-    }
-
-  });
-
-}
-
-window.addEventListener("scroll", updateActiveNav);
-
-
-// Back to top button
-const backToTop = document.getElementById("backToTop");
+const navLinks = document.querySelectorAll(".nav-links a");
 
 window.addEventListener("scroll", () => {
 
-  if (window.scrollY > 500) {
-    backToTop.classList.add("show");
-  } else {
-    backToTop.classList.remove("show");
-  }
+  let currentSection = "";
 
-});
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 180;
 
-backToTop.addEventListener("click", () => {
-
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
+    if (window.scrollY >= sectionTop) {
+      currentSection = section.getAttribute("id");
+    }
   });
 
-});
+  navLinks.forEach(link => {
+    link.classList.remove("active");
 
-
-// Small reveal animation
-const revealElements = document.querySelectorAll(
-  ".skill-card, .project-card, .about-card, .education-card"
-);
-
-const observer = new IntersectionObserver(
-  entries => {
-
-    entries.forEach(entry => {
-
-      if (entry.isIntersecting) {
-
-        entry.target.style.opacity = "1";
-        entry.target.style.transform = "translateY(0)";
-
-      }
-
-    });
-
-  },
-  {
-    threshold: 0.12
-  }
-);
-
-
-revealElements.forEach(element => {
-
-  element.style.opacity = "0";
-  element.style.transform = "translateY(25px)";
-  element.style.transition =
-    "opacity .7s ease, transform .7s ease";
-
-  observer.observe(element);
+    if (link.getAttribute("href") === "#" + currentSection) {
+      link.classList.add("active");
+    }
+  });
 
 });
