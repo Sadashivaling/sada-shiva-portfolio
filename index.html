@@ -2,14 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio of Sadashivaling Kumaraling Pattanashetti" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
   <title>Sadashivaling Kumaraling Pattanashetti | Portfolio</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta
+    name="description"
+    content="Portfolio of Sadashivaling Kumaraling Pattanashetti, Computer Science & Engineering student focused on Python, Machine Learning and Deep Learning."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
     rel="stylesheet"
   />
 
@@ -18,43 +27,66 @@
 
 <body>
 
-  <!-- Animated background -->
-  <div class="background">
-    <div class="background-image"></div>
-    <div class="background-overlay"></div>
+  <!-- Scroll progress -->
+  <div class="scroll-progress"></div>
+
+  <!-- Background effects -->
+  <div class="background-effects">
     <div class="glow glow-one"></div>
     <div class="glow glow-two"></div>
+    <div class="grid-overlay"></div>
   </div>
 
-  <!-- Navigation -->
+  <!-- NAVIGATION -->
   <header class="navbar">
-    <a href="#home" class="brand">SKP<span>.</span></a>
+    <a href="#home" class="brand">
+      <span class="brand-mark">SK</span>
+      <span class="brand-name">Sadashivaling</span>
+    </a>
 
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
+    <nav class="nav-links">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#contact" class="nav-link">Contact</a>
     </nav>
 
-    <a href="#contact" class="nav-button">Let's Talk ↗</a>
+    <button class="menu-button" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </div>
 
   <main>
 
     <!-- HERO -->
     <section id="home" class="hero section">
 
-      <div class="hero-left reveal">
+      <div class="hero-background"></div>
+
+      <div class="hero-content reveal">
 
         <div class="availability">
-          <span></span>
+          <span class="status-dot"></span>
           Computer Science Student
         </div>
 
-        <p class="eyebrow">COMPUTER SCIENCE & ENGINEERING</p>
+        <p class="hero-kicker">
+          PYTHON · MACHINE LEARNING · DEEP LEARNING
+        </p>
 
         <h1>
           Sadashivaling
@@ -62,64 +94,48 @@
         </h1>
 
         <p class="hero-description">
-          I build practical software and machine-learning solutions,
-          with a focus on Python, computer vision and deep learning.
+          Computer Science & Engineering student interested in
+          building practical software and exploring Machine Learning
+          and Deep Learning.
         </p>
 
         <div class="hero-buttons">
-          <a href="#projects" class="button primary">
-            View Projects <span>↗</span>
+          <a href="#projects" class="button button-primary">
+            <span>Explore Projects</span>
+            <span class="arrow">↗</span>
           </a>
 
-          <a href="#contact" class="button secondary">
-            Contact Me
+          <a href="#contact" class="button button-secondary">
+            Get in Touch
           </a>
         </div>
 
         <div class="hero-meta">
           <div>
             <strong>8.38</strong>
-            <small>CGPA</small>
+            <span>CGPA</span>
           </div>
 
           <div>
             <strong>4th</strong>
-            <small>Year CSE</small>
+            <span>Year CSE</span>
           </div>
 
           <div>
-            <strong>3+</strong>
-            <small>Core Areas</small>
+            <strong>3</strong>
+            <span>Languages</span>
           </div>
         </div>
 
       </div>
 
-      <div class="hero-right reveal delay">
-
-        <div class="hero-card">
-
-          <div class="card-top">
-            <span>01</span>
-            <span>PROFILE</span>
-          </div>
-
-          <div class="profile-circle">
-            SKP
-          </div>
-
-          <h2>Software & ML</h2>
-
-          <p>
-            Python · Machine Learning · Deep Learning
-          </p>
-
-          <div class="orbit orbit-one"></div>
-          <div class="orbit orbit-two"></div>
-
-        </div>
-
+      <div class="hero-side-text">
+        <span>SCROLL TO EXPLORE</span>
+        <div class="scroll-line"></div>
       </div>
+
+      <div class="hero-orbit orbit-one"></div>
+      <div class="hero-orbit orbit-two"></div>
 
     </section>
 
@@ -128,39 +144,58 @@
     <section id="about" class="section content-section">
 
       <div class="section-heading reveal">
-        <p>02 — ABOUT</p>
-        <h2>Building with curiosity.</h2>
+        <span class="section-number">01</span>
+        <div>
+          <p class="eyebrow">ABOUT ME</p>
+          <h2>Building my foundation<br />in technology.</h2>
+        </div>
       </div>
 
       <div class="about-grid">
 
-        <div class="about-main glass reveal">
-          <p>
+        <div class="about-main glass-card reveal">
+
+          <div class="card-label">WHO I AM</div>
+
+          <p class="large-text">
             I am a Computer Science & Engineering student at
-            Don Bosco Institute of Technology, currently in my
-            4th year.
+            <strong>Don Bosco Institute of Technology</strong>,
+            currently in my 4th year.
           </p>
 
           <p>
-            My interests are focused on Python development,
-            machine learning, deep learning and computer vision.
-            I enjoy turning ideas into practical projects and
-            continuously improving my technical skills.
+            My current technical interests are Python,
+            Machine Learning and Deep Learning. I enjoy learning
+            through practical projects and experimenting with
+            tools such as Google Colab and Jupyter Notebook.
           </p>
+
+          <p>
+            I am continuously developing my programming and
+            problem-solving skills while exploring how intelligent
+            systems can solve real-world problems.
+          </p>
+
         </div>
 
-        <div class="about-side reveal delay">
+        <div class="about-stats">
 
-          <div class="info-card">
-            <span>EDUCATION</span>
-            <strong>Don Bosco Institute of Technology</strong>
+          <div class="stat-card reveal">
+            <span>01</span>
+            <strong>8.38</strong>
+            <small>Current CGPA</small>
+          </div>
+
+          <div class="stat-card reveal">
+            <span>02</span>
+            <strong>CSE</strong>
             <small>Computer Science & Engineering</small>
           </div>
 
-          <div class="info-card">
-            <span>LOCATION</span>
-            <strong>India</strong>
-            <small>Available for opportunities</small>
+          <div class="stat-card reveal">
+            <span>03</span>
+            <strong>ML</strong>
+            <small>Current Technical Focus</small>
           </div>
 
         </div>
@@ -174,36 +209,60 @@
     <section id="skills" class="section content-section">
 
       <div class="section-heading reveal">
-        <p>03 — SKILLS</p>
-        <h2>What I work with.</h2>
+        <span class="section-number">02</span>
+        <div>
+          <p class="eyebrow">TECHNICAL SKILLS</p>
+          <h2>Tools I work with.</h2>
+        </div>
       </div>
 
       <div class="skills-grid">
 
-        <div class="skill-card reveal">
+        <article class="skill-card reveal">
+          <div class="skill-icon">PY</div>
+          <div>
+            <h3>Python</h3>
+            <p>Programming & problem solving</p>
+          </div>
           <span class="skill-number">01</span>
-          <h3>Python</h3>
-          <p>Programming and development</p>
-        </div>
+        </article>
 
-        <div class="skill-card reveal delay">
+        <article class="skill-card reveal">
+          <div class="skill-icon">ML</div>
+          <div>
+            <h3>Machine Learning</h3>
+            <p>Learning models and practical applications</p>
+          </div>
           <span class="skill-number">02</span>
-          <h3>Machine Learning</h3>
-          <p>ML models and practical applications</p>
-        </div>
+        </article>
 
-        <div class="skill-card reveal">
+        <article class="skill-card reveal">
+          <div class="skill-icon">DL</div>
+          <div>
+            <h3>Deep Learning</h3>
+            <p>Exploring neural network based solutions</p>
+          </div>
           <span class="skill-number">03</span>
-          <h3>Deep Learning</h3>
-          <p>Neural networks and computer vision</p>
-        </div>
+        </article>
 
-      </div>
+        <article class="skill-card reveal">
+          <div class="skill-icon">CO</div>
+          <div>
+            <h3>Google Colab</h3>
+            <p>Experimentation and ML notebooks</p>
+          </div>
+          <span class="skill-number">04</span>
+        </article>
 
-      <div class="tools-row reveal">
-        <span>Google Colab</span>
-        <span>Jupyter Notebook</span>
-        <span>Computer Vision</span>
+        <article class="skill-card reveal">
+          <div class="skill-icon">JP</div>
+          <div>
+            <h3>Jupyter Notebook</h3>
+            <p>Interactive development and experimentation</p>
+          </div>
+          <span class="skill-number">05</span>
+        </article>
+
       </div>
 
     </section>
@@ -213,62 +272,61 @@
     <section id="projects" class="section content-section">
 
       <div class="section-heading reveal">
-        <p>04 — SELECTED WORK</p>
-        <h2>Projects that matter.</h2>
+        <span class="section-number">03</span>
+        <div>
+          <p class="eyebrow">SELECTED WORK</p>
+          <h2>Projects & experiments.</h2>
+        </div>
       </div>
 
-      <div class="projects-grid">
+      <div class="project-feature reveal">
 
-        <article class="project-card featured reveal">
+        <div class="project-visual">
+          <div class="project-glow"></div>
 
-          <div class="project-number">01</div>
+          <div class="scan-lines"></div>
 
-          <div class="project-content">
-            <p class="project-type">COMPUTER VISION</p>
-
-            <h3>Vehicle Number Plate Detection</h3>
-
-            <p>
-              A computer-vision based project focused on detecting
-              vehicle number plates from images.
-            </p>
-
-            <div class="tags">
-              <span>Python</span>
-              <span>ML</span>
-              <span>Computer Vision</span>
-            </div>
+          <div class="plate-demo">
+            <span>AI</span>
+            <strong>NUMBER</strong>
+            <span>PLATE</span>
           </div>
 
-          <span class="project-arrow">↗</span>
+          <div class="project-floating-card">
+            <span>PROJECT</span>
+            <strong>01</strong>
+          </div>
+        </div>
 
-        </article>
+        <div class="project-content">
 
+          <p class="project-type">MACHINE LEARNING / COMPUTER VISION</p>
 
-        <article class="project-card reveal delay">
+          <h3>Vehicle Number Plate Detection</h3>
 
-          <div class="project-number">02</div>
+          <p>
+            A project focused on detecting vehicle number plates
+            using computer vision and machine learning concepts.
+            The project reflects my interest in applying intelligent
+            systems to practical problems.
+          </p>
 
-          <div class="project-content">
-            <p class="project-type">MACHINE LEARNING</p>
-
-            <h3>Machine Learning Projects</h3>
-
-            <p>
-              Practical experiments and learning projects using
-              Python, notebooks and machine-learning techniques.
-            </p>
-
-            <div class="tags">
-              <span>Python</span>
-              <span>Jupyter</span>
-            </div>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>Machine Learning</span>
+            <span>Computer Vision</span>
           </div>
 
-          <span class="project-arrow">↗</span>
+        </div>
 
-        </article>
+      </div>
 
+      <div class="project-note reveal">
+        <span class="note-icon">+</span>
+        <p>
+          More projects and experiments will be added as I continue
+          building and learning.
+        </p>
       </div>
 
     </section>
@@ -278,28 +336,37 @@
     <section id="education" class="section content-section">
 
       <div class="section-heading reveal">
-        <p>05 — EDUCATION</p>
-        <h2>Academic journey.</h2>
+        <span class="section-number">04</span>
+        <div>
+          <p class="eyebrow">EDUCATION</p>
+          <h2>Academic journey.</h2>
+        </div>
       </div>
 
-      <div class="education-card glass reveal">
+      <div class="education-card glass-card reveal">
 
-        <div>
-          <span class="status">CURRENT</span>
-
-          <h3>Computer Science & Engineering</h3>
-
-          <p>Don Bosco Institute of Technology</p>
+        <div class="education-year">
+          <span>CURRENT</span>
+          <strong>4th YEAR</strong>
         </div>
 
-        <div class="cgpa">
+        <div class="education-details">
+          <p class="education-degree">
+            Bachelor of Engineering
+          </p>
+
+          <h3>
+            Computer Science & Engineering
+          </h3>
+
+          <p>
+            Don Bosco Institute of Technology
+          </p>
+        </div>
+
+        <div class="education-score">
           <span>CGPA</span>
           <strong>8.38</strong>
-        </div>
-
-        <div class="year">
-          <span>YEAR</span>
-          <strong>4th Year</strong>
         </div>
 
       </div>
@@ -308,17 +375,33 @@
 
 
     <!-- LANGUAGES -->
-    <section class="section small-section">
+    <section class="section content-section languages-section">
 
       <div class="section-heading reveal">
-        <p>06 — LANGUAGES</p>
-        <h2>Communication.</h2>
+        <span class="section-number">05</span>
+        <div>
+          <p class="eyebrow">LANGUAGES</p>
+          <h2>Communication.</h2>
+        </div>
       </div>
 
-      <div class="language-list reveal">
-        <span>Kannada</span>
-        <span>Hindi</span>
-        <span>English</span>
+      <div class="languages-grid">
+
+        <div class="language reveal">
+          <span>01</span>
+          <strong>Kannada</strong>
+        </div>
+
+        <div class="language reveal">
+          <span>02</span>
+          <strong>Hindi</strong>
+        </div>
+
+        <div class="language reveal">
+          <span>03</span>
+          <strong>English</strong>
+        </div>
+
       </div>
 
     </section>
@@ -327,37 +410,47 @@
     <!-- CONTACT -->
     <section id="contact" class="section contact-section">
 
-      <div class="contact-inner reveal">
+      <div class="contact-card reveal">
 
-        <p class="eyebrow">07 — CONTACT</p>
+        <div class="contact-background"></div>
 
-        <h2>
-          Have an idea?
-          <span>Let's connect.</span>
-        </h2>
+        <div class="contact-content">
 
-        <p>
-          I'm open to learning opportunities, collaborations
-          and conversations around software and machine learning.
-        </p>
+          <p class="eyebrow">06 — CONTACT</p>
 
-        <div class="contact-buttons">
+          <h2>
+            Let's build something
+            <span>interesting.</span>
+          </h2>
 
-          <a
-            href="https://github.com/Sadashivaling"
-            target="_blank"
-            rel="noopener"
-          >
-            GitHub ↗
-          </a>
+          <p>
+            If you would like to connect, discuss technology,
+            projects or opportunities, feel free to reach out.
+          </p>
 
-          <a
-            href="https://www.linkedin.com/in/sada-shiva-559bb7360"
-            target="_blank"
-            rel="noopener"
-          >
-            LinkedIn ↗
-          </a>
+          <div class="contact-buttons">
+
+            <a
+              href="https://github.com/Sadashivaling"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-button"
+            >
+              <span>GitHub</span>
+              <span>↗</span>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/sada-shiva-559bb7360"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-button"
+            >
+              <span>LinkedIn</span>
+              <span>↗</span>
+            </a>
+
+          </div>
 
         </div>
 
@@ -368,10 +461,29 @@
   </main>
 
 
-  <footer>
-    <span>© <span id="year"></span> Sadashivaling Kumaraling Pattanashetti</span>
-    <span>Built with curiosity.</span>
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div>
+      <strong>SKP</strong>
+      <span>Portfolio</span>
+    </div>
+
+    <p>
+      © <span id="year"></span> Sadashivaling Kumaraling Pattanashetti
+    </p>
+
+    <a href="#home" class="back-top">
+      Back to top ↑
+    </a>
+
   </footer>
+
+
+  <!-- BACK TO TOP -->
+  <button class="floating-top" aria-label="Back to top">
+    ↑
+  </button>
 
   <script src="script.js"></script>
 
